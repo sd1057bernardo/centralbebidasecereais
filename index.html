@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+        }
+
+        #logo {
+            width: 50%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #logo img {
+            width: 50%;
+            height: auto;
+            animation: zoomInOut 8s infinite alternate;
+        }
+
+        @keyframes zoomInOut {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        #content {
+            width: 50%;
+            padding: 2em;
+            box-sizing: border-box;
+        }
+
+        #announcement,
+        #benefits {
+            margin-bottom: 2em;
+        }
+
+        h1, h2, p {
+            color: #fff;
+        }
+
+        #contact-info {
+            margin-top: 2em;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="logo">
+        <img src="imglogo.bmp" alt="Logo" />
+    </div>
+
+    <div id="content">
+        <h1>Bem-vindo à CBC - Central de Bebidas e Cereais!</h1>
+        
+        <div id="announcement">
+            <h2>Anúncio</h2>
+            <p>Descubra uma variedade extensa de cereais e bebidas de alta qualidade. Seja no atacado ou varejo, somos sua fonte confiável para atender às suas demandas.</p>
+        </div>
+
+        <div id="benefits">
+            <h2>Benefícios</h2>
+            <p>Nosso compromisso é simplificar sua gestão de estoque, garantir margens competitivas e construir uma parceria sólida. Escolha-nos como seu fornecedor e contribua para o sucesso do seu negócio.</p>
+        </div>
+
+        <div id="contact-info">
+            <h2>Informações de Contato</h2>
+            <p><strong>Endereço:</strong> R. Pedro Vasconcelos, 20 - Centro, Extremoz - RN, 59575-000</p>
+            <p><strong>Telefone:</strong> <a href="https://wa.me/5584981250490" target="_blank">(84) 98125-0490 (WhatsApp)</a></p>
+            <p><strong>Horário de Funcionamento:</strong></p>
+            <ul>
+                <li>Quarta-feira: 07:30–17:30</li>
+                <li>Quinta-feira: 07:30–17:30</li>
+                <li>Sexta-feira: 07:30–17:30</li>
+                <li>Sábado: 07:30–17:30</li>
+                <li>Domingo: 07:30–12:00</li>
+                <li>Segunda-feira: 07:30–17:30</li>
+                <li>Terça-feira: 07:30–17:30</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 CBC - Central de Bebidas e Cereais. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyC95Un3DNs8aiM1wBa7uBNWTiaFBXVAxW0",
+    authDomain: "centralbebidascereais-3bcad.firebaseapp.com",
+    projectId: "centralbebidascereais-3bcad",
+    storageBucket: "centralbebidascereais-3bcad.appspot.com",
+    messagingSenderId: "466793369554",
+    appId: "1:466793369554:web:c6f1b38fa1a67d7b5b820b",
+    measurementId: "G-F481Z3TCQQ"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</html>
